@@ -1,0 +1,85 @@
+#pragma version 10
+
+smart_contracts.store.contract.Store.approval_program:
+    txn ApplicationID
+    bnz main_entrypoint@2
+    callsub __init__
+
+main_entrypoint@2:
+    txn NumAppArgs
+    bz main_bare_routing@8
+    method "set_value(string)void"
+    method "get_value()string"
+    txna ApplicationArgs 0
+    match main_set_value_route@4 main_get_value_route@5
+    err // reject transaction
+
+main_set_value_route@4:
+    txn OnCompletion
+    !
+    assert // OnCompletion is NoOp
+    txn ApplicationID
+    assert // is not creating
+    txna ApplicationArgs 1
+    extract 2 0
+    callsub set_value
+    int 1
+    return
+
+main_get_value_route@5:
+    txn OnCompletion
+    !
+    assert // OnCompletion is NoOp
+    txn ApplicationID
+    assert // is not creating
+    callsub get_value
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    byte 0x151f7c75
+    swap
+    concat
+    log
+    int 1
+    return
+
+main_bare_routing@8:
+    txn OnCompletion
+    !
+    assert // reject transaction
+    txn ApplicationID
+    !
+    assert // is creating
+    int 1
+    return
+
+
+// smart_contracts.store.contract.Store.set_value(value: bytes) -> void:
+set_value:
+    proto 1 0
+    byte "stored_value"
+    frame_dig -1
+    app_global_put
+    retsub
+
+
+// smart_contracts.store.contract.Store.get_value() -> bytes:
+get_value:
+    proto 0 1
+    int 0
+    byte "stored_value"
+    app_global_get_ex
+    assert // check self.stored_value exists
+    retsub
+
+
+// smart_contracts.store.contract.Store.__init__() -> void:
+__init__:
+    proto 0 0
+    byte "stored_value"
+    byte ""
+    app_global_put
+    retsub

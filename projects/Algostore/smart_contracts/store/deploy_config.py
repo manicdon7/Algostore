@@ -14,21 +14,20 @@ def deploy(
     app_spec: algokit_utils.ApplicationSpecification,
     deployer: algokit_utils.Account,
 ) -> None:
-    from smart_contracts.artifacts.hello_world.hello_world_client import (
-        HelloWorldClient,
+    from smart_contracts.artifacts.store.store_client import (
+        StoreClient,
     )
 
-    app_client = HelloWorldClient(
+    app_client = StoreClient(
         algod_client,
         creator=deployer,
         indexer_client=indexer_client,
     )
-
     app_client.deploy(
         on_schema_break=algokit_utils.OnSchemaBreak.AppendApp,
         on_update=algokit_utils.OnUpdate.AppendApp,
     )
-    name = "world"
+    name = "store"
     response = app_client.hello(name=name)
     logger.info(
         f"Called hello on {app_spec.contract.name} ({app_client.app_id}) "

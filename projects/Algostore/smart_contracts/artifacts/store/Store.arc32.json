@@ -1,0 +1,75 @@
+{
+    "hints": {
+        "set_value(string)void": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "get_value()string": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        }
+    },
+    "source": {
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDEwCgpzbWFydF9jb250cmFjdHMuc3RvcmUuY29udHJhY3QuU3RvcmUuYXBwcm92YWxfcHJvZ3JhbToKICAgIHR4biBBcHBsaWNhdGlvbklECiAgICBibnogbWFpbl9lbnRyeXBvaW50QDIKICAgIGNhbGxzdWIgX19pbml0X18KCm1haW5fZW50cnlwb2ludEAyOgogICAgdHhuIE51bUFwcEFyZ3MKICAgIGJ6IG1haW5fYmFyZV9yb3V0aW5nQDgKICAgIG1ldGhvZCAic2V0X3ZhbHVlKHN0cmluZyl2b2lkIgogICAgbWV0aG9kICJnZXRfdmFsdWUoKXN0cmluZyIKICAgIHR4bmEgQXBwbGljYXRpb25BcmdzIDAKICAgIG1hdGNoIG1haW5fc2V0X3ZhbHVlX3JvdXRlQDQgbWFpbl9nZXRfdmFsdWVfcm91dGVANQogICAgZXJyIC8vIHJlamVjdCB0cmFuc2FjdGlvbgoKbWFpbl9zZXRfdmFsdWVfcm91dGVANDoKICAgIHR4biBPbkNvbXBsZXRpb24KICAgICEKICAgIGFzc2VydCAvLyBPbkNvbXBsZXRpb24gaXMgTm9PcAogICAgdHhuIEFwcGxpY2F0aW9uSUQKICAgIGFzc2VydCAvLyBpcyBub3QgY3JlYXRpbmcKICAgIHR4bmEgQXBwbGljYXRpb25BcmdzIDEKICAgIGV4dHJhY3QgMiAwCiAgICBjYWxsc3ViIHNldF92YWx1ZQogICAgaW50IDEKICAgIHJldHVybgoKbWFpbl9nZXRfdmFsdWVfcm91dGVANToKICAgIHR4biBPbkNvbXBsZXRpb24KICAgICEKICAgIGFzc2VydCAvLyBPbkNvbXBsZXRpb24gaXMgTm9PcAogICAgdHhuIEFwcGxpY2F0aW9uSUQKICAgIGFzc2VydCAvLyBpcyBub3QgY3JlYXRpbmcKICAgIGNhbGxzdWIgZ2V0X3ZhbHVlCiAgICBkdXAKICAgIGxlbgogICAgaXRvYgogICAgZXh0cmFjdCA2IDIKICAgIHN3YXAKICAgIGNvbmNhdAogICAgYnl0ZSAweDE1MWY3Yzc1CiAgICBzd2FwCiAgICBjb25jYXQKICAgIGxvZwogICAgaW50IDEKICAgIHJldHVybgoKbWFpbl9iYXJlX3JvdXRpbmdAODoKICAgIHR4biBPbkNvbXBsZXRpb24KICAgICEKICAgIGFzc2VydCAvLyByZWplY3QgdHJhbnNhY3Rpb24KICAgIHR4biBBcHBsaWNhdGlvbklECiAgICAhCiAgICBhc3NlcnQgLy8gaXMgY3JlYXRpbmcKICAgIGludCAxCiAgICByZXR1cm4KCgovLyBzbWFydF9jb250cmFjdHMuc3RvcmUuY29udHJhY3QuU3RvcmUuc2V0X3ZhbHVlKHZhbHVlOiBieXRlcykgLT4gdm9pZDoKc2V0X3ZhbHVlOgogICAgcHJvdG8gMSAwCiAgICBieXRlICJzdG9yZWRfdmFsdWUiCiAgICBmcmFtZV9kaWcgLTEKICAgIGFwcF9nbG9iYWxfcHV0CiAgICByZXRzdWIKCgovLyBzbWFydF9jb250cmFjdHMuc3RvcmUuY29udHJhY3QuU3RvcmUuZ2V0X3ZhbHVlKCkgLT4gYnl0ZXM6CmdldF92YWx1ZToKICAgIHByb3RvIDAgMQogICAgaW50IDAKICAgIGJ5dGUgInN0b3JlZF92YWx1ZSIKICAgIGFwcF9nbG9iYWxfZ2V0X2V4CiAgICBhc3NlcnQgLy8gY2hlY2sgc2VsZi5zdG9yZWRfdmFsdWUgZXhpc3RzCiAgICByZXRzdWIKCgovLyBzbWFydF9jb250cmFjdHMuc3RvcmUuY29udHJhY3QuU3RvcmUuX19pbml0X18oKSAtPiB2b2lkOgpfX2luaXRfXzoKICAgIHByb3RvIDAgMAogICAgYnl0ZSAic3RvcmVkX3ZhbHVlIgogICAgYnl0ZSAiIgogICAgYXBwX2dsb2JhbF9wdXQKICAgIHJldHN1Ygo=",
+        "clear": "I3ByYWdtYSB2ZXJzaW9uIDEwCgpzbWFydF9jb250cmFjdHMuc3RvcmUuY29udHJhY3QuU3RvcmUuY2xlYXJfc3RhdGVfcHJvZ3JhbToKICAgIGludCAxCiAgICByZXR1cm4K"
+    },
+    "state": {
+        "global": {
+            "num_byte_slices": 1,
+            "num_uints": 0
+        },
+        "local": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        }
+    },
+    "schema": {
+        "global": {
+            "declared": {
+                "stored_value": {
+                    "type": "bytes",
+                    "key": "stored_value"
+                }
+            },
+            "reserved": {}
+        },
+        "local": {
+            "declared": {},
+            "reserved": {}
+        }
+    },
+    "contract": {
+        "name": "Store",
+        "methods": [
+            {
+                "name": "set_value",
+                "args": [
+                    {
+                        "type": "string",
+                        "name": "value"
+                    }
+                ],
+                "readonly": false,
+                "returns": {
+                    "type": "void"
+                },
+                "desc": "Store the provided value in the contract's storage."
+            },
+            {
+                "name": "get_value",
+                "args": [],
+                "readonly": false,
+                "returns": {
+                    "type": "string"
+                },
+                "desc": "Retrieve the stored value."
+            }
+        ],
+        "networks": {}
+    },
+    "bare_call_config": {
+        "no_op": "CREATE"
+    }
+}
