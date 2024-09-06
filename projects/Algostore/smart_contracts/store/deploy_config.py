@@ -6,7 +6,6 @@ from algosdk.v2client.indexer import IndexerClient
 
 logger = logging.getLogger(__name__)
 
-
 # define deployment behaviour based on supplied app spec
 def deploy(
     algod_client: AlgodClient,
